@@ -11,43 +11,59 @@
 
 <body>
 
-    <div id="page1">
-        <h1>Hello! Welcome to your coding quiz</h1>
+    <div>
+
+        <label class="time"></label>
+
+    </div>
+
+    <div class="page one">
+        <h1>Hello! Welcome to your coding quiz:</h1>
         <p>The following quiz will test you on your javascript knowledge</p>
         <button id="start_btn">Start Quiz</button>
     </div>
-    <div id="page2">
-        <div id="questions">
-            <ul>
-                <li>
-                    <p>Question 1</p>
-                    <input type="radio" id="1"> 
-                </li>
-                <li>
-                    <p>Question 2</p>
-                    <input type="radio" id="2"> 
-                </li>
-                <li>
-                    <p>Question 3</p>
-                    <input type="radio" id="3"> 
-                </li>
-                <li>
-                    <p>Question 4</p>
-                    <input type="radio" id="4"> 
-                </li>
-            </ul>
+        <div class="page two">
+            <h2 id="header"></h2>
+            <p id="points">Points: 0</p>
+            <h3 id="questions"></h3>
+                <ul>
+                    <li>
+                    
+                        <input type="radio" id="a" name="questionStyle"> 
+                        <label for="a" id="question1"></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="a" name="questionStyle">
+                        <label for="b" id="question2"></label> 
+                    </li>
+                    <li>
+                        <input type="radio" id="a" name="questionStyle"> 
+                        <label for="c" id="question3"></label>
+                    </li>
+                    <li>
+                        <input type="radio" id="a" name="questionStyle">
+                        <label for="d" id="question4"></label> 
+                    </li>
+                </ul>
 
+                <button id="next_btn">Next Question</button>
+        </div>
+        <div class="page three">
+            <h1>Congratulations you have finished the quiz!</h1>
+            <p>Your Score:</p>
+            <label id="score"></label>
 
+            <form>
+                <input placeholder="name" id="name" />
+                <input placeholder="email" id="email" />
+                <button id="submit_btn">Submit Quiz</button>
+            </form>
+        
         </div>
     </div>
 
 
 
-    <form>
-        <input placeholder="name" id="name" />
-        <input placeholder="email" id="email" />
-        <button id="submit">Submit Quiz</button>
-    </form>
 
 
 
@@ -55,8 +71,13 @@
 
 
 
-
-    <script src= "script.js"></script>    
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.js"
+    integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous">
+    </script>
+    <script src= "./Assets/js/script.js"></script> 
+   
 </body>
 
 
