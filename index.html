@@ -11,37 +11,56 @@
 
 <body>
 
-    <div>
 
-        <label class="time"></label>
 
-    </div>
 
     <div class="page one">
-        <h1>Hello! Welcome to your coding quiz:</h1>
-        <p>The following quiz will test you on your javascript knowledge</p>
+    <header>
+
+
+    
+    <section id="sec1">
+        <h1>Hello! Welcome to your coding quiz</h1>
+    </section>
+    </header>
+    <section id="sec2">
+        <p>The following quiz will test you on your javascript knowledge:</p>
         <button id="start_btn">Start Quiz</button>
+    </section>
     </div>
-        <div class="page two">
+
+
+
+
+
+    <div class="page two" >
+        <div id='pg2head'>
             <h2 id="header"></h2>
             <p id="points">Points: 0</p>
+        </div>
+        <div id="timeDiv">
+
+            <label class="time"></label>
+    
+        </div>
+        <div id="pg2body">
             <h3 id="questions"></h3>
                 <ul>
                     <li>
                     
-                        <input type="radio" id="a" name="questionStyle"> 
+                        <input type="radio" name="questionStyle" value = "a"> 
                         <label for="a" id="question1"></label>
                     </li>
                     <li>
-                        <input type="radio" id="a" name="questionStyle">
-                        <label for="b" id="question2"></label> 
+                        <input type="radio" name="questionStyle" value = "b">
+                        <label for="b" id="question2"></label> </label> 
                     </li>
                     <li>
-                        <input type="radio" id="a" name="questionStyle"> 
+                        <input type="radio" name="questionStyle" value = "c"> 
                         <label for="c" id="question3"></label>
                     </li>
                     <li>
-                        <input type="radio" id="a" name="questionStyle">
+                        <input type="radio" name="questionStyle" value = "d">
                         <label for="d" id="question4"></label> 
                     </li>
                 </ul>
@@ -60,7 +79,7 @@
             </form>
         
         </div>
-    </div>
+    
 
 
 
